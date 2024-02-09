@@ -49,16 +49,44 @@ class App(customtkinter.CTk):
         self.btn_dividir.grid(row=5, pady=10, columnspan=2, sticky="nsew")
 
     def btn_sumar_on_click(self):
-        pass
+        numero_uno = self.txt_operador_a.get()
+        numero_dos = self.txt_operador_b.get()
+        
+        numero_uno_a_numero = int(numero_uno)
+        numero_dos_a_numero = int(numero_dos)
+        resultado_numero = numero_uno_a_numero + numero_dos_a_numero
+        mensaje = "La respuesta es {0}".format(resultado_numero)
+        alert("Resultado", mensaje)
 
     def btn_restar_on_click(self):
-        pass
+        numero_uno = self.txt_operador_a.get()
+        numero_dos = self.txt_operador_b.get()
+        
+        numero_uno_a_numero = int(numero_uno)
+        numero_dos_a_numero = int(numero_dos)
+        resultado_numero = numero_uno_a_numero - numero_dos_a_numero
+        mensaje = "La respuesta es {0}".format(resultado_numero)
+        alert("Resultado", mensaje)
 
     def btn_multiplicar_on_click(self):
-        pass
+        numero_uno = self.txt_operador_a.get()
+        numero_dos = self.txt_operador_b.get()
+        
+        numero_uno_a_numero = int(numero_uno)
+        numero_dos_a_numero = int(numero_dos)
+        resultado_numero = numero_uno_a_numero * numero_dos_a_numero
+        mensaje = "La respuesta es {0}".format(resultado_numero)
+        alert("Resultado", mensaje)
 
     def btn_dividir_on_click(self):
-        pass
+        numero_uno = self.txt_operador_a.get()
+        numero_dos = self.txt_operador_b.get()
+        
+        numero_uno_a_numero = int(numero_uno)
+        numero_dos_a_numero = int(numero_dos)
+        resultado_numero = numero_uno_a_numero / numero_dos_a_numero
+        mensaje = "La respuesta es {0}".format(resultado_numero)
+        alert("Resultado", mensaje)
         
 if __name__ == "__main__":
     app = App()
