@@ -29,7 +29,7 @@ class App(customtkinter.CTk):
     def btn_mostrar_on_click(self):
         nombre_alumno = prompt ("Ingrese su nombre", "Nombre") 
         alert ("Tu nombre es", nombre_alumno)
-        
+        sasasasa
         
     
 if __name__ == "__main__":
