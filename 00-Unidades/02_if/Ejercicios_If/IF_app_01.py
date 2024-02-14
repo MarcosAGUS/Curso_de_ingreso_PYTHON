@@ -36,6 +36,7 @@ class App(customtkinter.CTk):
         edad = int(self.txt_edad.get())
         if edad == 18:
             alert("mensaje", "Usted tiene 18 años")
+        alert("mensaje", "fin del programa")
 
          
 if __name__ == "__main__":
