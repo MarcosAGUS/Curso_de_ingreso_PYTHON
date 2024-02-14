@@ -33,9 +33,15 @@ class App(customtkinter.CTk):
         self.btn_informar = customtkinter.CTkButton(master=self, text="Informar", command=self.btn_informar_on_click)
         self.btn_informar.grid(row=2, pady=20, columnspan=2, sticky="nsew")
         
+        
     
     def btn_informar_on_click(self):
-        pass
+        hora = (self.txt_hora.get())
+        match hora:
+            case "7" | "8" | "9" | "10" | "11":
+                mensaje = "Es de mañana"
+        alert("mensaje", mensaje)
+
     
     
 if __name__ == "__main__":
